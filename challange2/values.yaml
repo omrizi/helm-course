@@ -10,6 +10,7 @@ deployment:
     version: 2.4
     pullPolicy: IfNotPresent
   port_name: http
+  port: 6443
 service:
   type: NodePort
   nodePort_port: 31234
