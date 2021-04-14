@@ -14,7 +14,8 @@ spec:
       containers:
         - name: apache
           image: "{{ .Values.deployment.image.image }}:{{ .Values.deployment.image.version }}"
-          ports: {{- include "portDetails" . | nindent 12 }}
-            - name: http
+          ports: 
+{{- include "port" . | nindent 12 }}
+            # - name: http
             #   containerPort: 80
             #   protocol: TCP
