@@ -5,6 +5,6 @@ metadata:
   labels:
     app: apache
 spec:
-{{- include "servicePort" . | nindent 0 }}
+{{- include "servicePort" . | nindent 2 }}
   selector:
     app: apache
